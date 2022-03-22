@@ -91,7 +91,7 @@ for timeStep = 1:timeSteps_total
     % *-------------------------------------*
     currentLocation = state(timeStep, 19:20);
     currentHeadingAngle = state(timeStep,24);
-    if checkPointCounter == length(checkPointList)
+    if checkPointCounter == length(checkPointList)+1
         fprintf('You have succesffully navigated the path \n');
         pause(1)
         fprintf('Reward yourself with a pint or something \n');
